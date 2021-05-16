@@ -25,7 +25,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='0.1',
+    version='0.1.1',
 
     description='cmd-line tool to clean scanned pages',
     long_description=long_description,
@@ -35,7 +35,6 @@ setup(
 
     # Author details
     author='Adrian Schlatter',
-    author_email='ad@tambora.ch',
 
     # Choose your license
     license='Revised BSD',
@@ -56,7 +55,6 @@ setup(
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
-        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 3',
     ],
 
@@ -83,7 +81,7 @@ setup(
     # $ pip install -e .[dev,test]
     extras_require={
         'dev': ['check-manifest'],
-        'test': [],
+        'test': ['check-manifest', 'pytest', 'flake8'],
     },
 
     # To provide executable scripts, use entry points in preference to the
